@@ -5,7 +5,7 @@ on:
     branches:
       - main
     schedule:
-      - cron: "0 0 * * *"
+      - cron: "9 9 * * *"
 
 jobs:
   autogreen:
@@ -20,9 +20,9 @@ jobs:
 
       - name: Auto green
         run: |
-          git config --local user.email "justjavac@gmail.com"
-          git config --local user.name "迷渡"
+          git config --local user.email "creator_xx@outlook.com"
+          git config --local user.name "CREATRTX"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
-          git commit --allow-empty -m "a commit a day keeps your girlfriend away"
+          git commit --allow-empty -m "a commit a day keeps nice"
           git push
