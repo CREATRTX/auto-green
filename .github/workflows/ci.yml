@@ -18,7 +18,7 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v3
 
-      - name: Auto green
+      - name: auto-green
         run: |
           git config --local user.email "creator_xx@outlook.com"
           git config --local user.name "CREATRTX"
